@@ -1,6 +1,8 @@
 # Girl Develop It Slides Template
 
-We use a customized reveal.js template for all Girl Develop It course slides. Each time you create a new course, clone a fresh copy of the blank slides. All the styles and plugins you need are included; you only need to edit the HTML to include your content.
+We use a customized reveal.js template for all Girl Develop It course slides. Each time you create a new course, clone a fresh copy of the blank slides. All the styles and plugins you need are included; you only need to edit the index.html file to include your content.
+
+The sample slides include examples of the most common slide types, including images, lists, code examples, etc. 
 
 
 ## reveal.js
