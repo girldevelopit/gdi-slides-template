@@ -1,6 +1,6 @@
 > Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
 
-# JS203: Client-side APIs
+# Add Your Course Title Here
 
 Slides and materials are hosted [here](http://example.com/).
 
