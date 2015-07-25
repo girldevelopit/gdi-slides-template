@@ -1,16 +1,13 @@
-Template for GDI Slides
+# Girl Develop It Slides Template
 
-# reveal.js
+We use a customized reveal.js template for all Girl Develop It course slides. Each time you create a new course, clone a fresh copy of the blank slides. All the styles and plugins you need are included; you only need to edit the HTML to include your content.
+
+
+## reveal.js
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
 
 reveal.js comes with a broad range of features including [nested slides](https://github.com/hakimel/reveal.js#markup), [markdown contents](https://github.com/hakimel/reveal.js#markdown), [PDF export](https://github.com/hakimel/reveal.js#pdf-export), [speaker notes](https://github.com/hakimel/reveal.js#speaker-notes) and a [JavaScript API](https://github.com/hakimel/reveal.js#api). It's best viewed in a browser with support for CSS 3D transforms but [fallbacks](https://github.com/hakimel/reveal.js/wiki/Browser-Support) are available to make sure your presentation can still be viewed elsewhere.
-
-
-#### More reading in the Wiki:
-- [Changelog](https://github.com/hakimel/reveal.js/wiki/Changelog): Up-to-date version history.
-- [Examples](https://github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
-- [Browser Support](https://github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
 
 
 ## Instructions
@@ -129,4 +126,5 @@ By default notes are written using standard HTML, see below, but you can add a `
 ## License
 
 Reveal.js Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se, MIT License
-GDI template (C) 2015 Girl Develop It, (License??)
+
+GDI template (C) 2015 by Cara Jo Miller for Girl Develop It, (License??)
