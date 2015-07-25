@@ -1,105 +1,59 @@
-# Girl Develop It Slides Template
+> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and modify the details below.
 
-We use a customized slide template for all Girl Develop It course slides. Each time you create a new course, clone a fresh copy of the blank slides. All the styles and javascript you need are included; you only need to edit the index.html file to add your content.
+# JS203: Client-side APIs
 
-These slides are based on reveal.js, a framework for easily creating beautiful presentations using HTML. All you should need to do is edit the HTML, but if you're looking for more information, [check out the reveal.js site](http://lab.hakim.se/reveal-js/).
+Slides and materials are hosted [here](http://gdichicago.com/classes/js203/workshop/).
 
-The sample slides include examples of the most common slide types, including images, lists, code samples, etc.
+## Course description
 
-### Curriculum Creation Tips
+An API is a service that lets one website use data or functionality from another website, and most modern webpages rely on at least one API - like the Facebook API for social interaction, the Google Analytics API for tracking, or the DoubleClick API for ads. In this workshop, we'll talk about how JavaScript-based APIs actually work behind the scenes, and give you some hands-on experience in using them, plus introduce you to a wealth of APIs to enhance your websites.
 
-* We recommend that you use unstacked slides for better readability. 
-* Limit the amount of content you add to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
-* Prefer visual explanations to text where possible.
-* Add teachers notes to fill in more details, and for class management notes like pacing and breaks.
-
-To make your slides viewable on the web using GitHub, create a branch called ```gh-pages```. The slides will be viewable at ```http://<username>.github.io/<repositoryname>```
+This is intended to be a follow-up workshop for JS101, JS201, and JS202 or for those already comfortable with JavaScript, jQuery, and AJAX requests looking to expand their skills. See the prerequisites section below for details.
 
 
-## Editing Instructions
+**Cost:** $40
 
-### Markup
+**Dates:** Sunday, July 13 from 12-3:30 PM
 
-Markup heirarchy needs to be ``<div class="reveal"> <div class="slides"> <section>`` where the ``<section>`` represents one slide and can be repeated indefinitely. If you place multiple ``<section>``'s inside of another ``<section>`` they will be shown as vertical slides. The first of the vertical slides is the "root" of the others (at the top), and it will be included in the horizontal sequence. For example:
+**Location:** Dev Bootcamp, 351 W Hubbard, Floor 7
 
-```html
-<div class="reveal">
-	<div class="slides"> 
-		<section>Single Horizontal Slide</section>
-		<section>
-			<section>Vertical Slide 1</section>
-			<section>Vertical Slide 2</section>
-		</section>
-	</div>
-</div>
-```
-
-### Markdown
-
-It's possible to write your slides using Markdown. To enable Markdown, add the ```data-markdown``` attribute to your ```<section>``` elements and wrap the contents in a ```<script type="text/template">``` like the example below.
-
-This is based on [data-markdown](https://gist.github.com/1343518) from [Paul Irish](https://github.com/paulirish) which in turn uses [showdown](https://github.com/coreyti/showdown/). This is sensitive to indentation (avoid mixing tabs and spaces) and line breaks (avoid consecutive breaks).
-
-```html
-<section data-markdown>
-	<script type="text/template">
-		## Page title
-		
-		A paragraph with some text and a [link](http://hakim.se).
-	</script>
-</section>
-```
-
-### Internal links
-
-It's easy to link between slides. The first example below targets the index of another slide whereas the second targets a slide with an ID attribute (```<section id="some-slide">```):
-
-```html
-<a href="#/2/2">Link</a>
-<a href="#/some-slide">Link</a>
-```
-
-### Fullscreen mode
-Just press »F« on your keyboard to show your presentation in fullscreen mode. Press the »ESC« key to exit fullscreen mode.
+A limited number of scholarships are available for those with a financial hardship. To apply, click here. Do not RSVP for the event. The deadline to apply for a scholarship is May 25. Scholarship applicants will be notified shortly after the deadline. Class capacity does not impact scholarship students.
 
 
-### Fragments
-Fragments are used to highlight individual elements on a slide. Every elmement with the class ```fragment``` will be stepped through before moving on to the next slide. Here's an example: http://lab.hakim.se/reveal-js/#/16
+### Prerequisites:
 
-The default fragment style is to start out invisible and fade in. This style can be changed by appending a different class to the fragment:
+Attendees should be comfortable with HTML5 and CSS3: specifically, you should understand the box model, floats, CSS resets, and HTML5 standards and tags. Additionally, you should be familiar with JavaScript syntax, data structures, conditionals, loops, event handling, jQuery, AJAX requests, and JSON.
 
-```html
-<section>
-	<p class="fragment grow">grow</p>
-	<p class="fragment shrink">shrink</p>
-	<p class="fragment roll-in">roll-in</p>
-	<p class="fragment fade-out">fade-out</p>
-	<p class="fragment highlight-red">highlight-red</p>
-	<p class="fragment highlight-green">highlight-green</p>
-	<p class="fragment highlight-blue">highlight-blue</p>
-</section>
-```
+You should have:
 
+(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
 
-### Speaker Notes
+(b) built and managed websites on your own,
 
-reveal.js comes with a speaker notes plugin which can be used to present per-slide notes in a separate browser window. The notes window also gives you a preview of the next upcoming slide so it may be helpful even if you haven't written any notes. Append ```?notes``` to presentation URL or press the 's' key on your keyboard to open the notes window.
+**And also:**
 
-By default notes are written using standard HTML, see below, but you can add a ```data-markdown``` attribute to the ```<aside>``` to write them using Markdown.
+(a) taken JS101 (full 4-week series, or completed all exercises and homework for the self-paced workshop) and JS201 through Girl Develop It, or
 
-```html
-<section>
-	<h2>Some Slide</h2>
+(b) have completed a self-study JavaScript course, and are familiar with syntax, arrays, conditionals, for and while loops, event handling, jQuery, AJAX requests, and handling JSON responses.
 
-	<aside class="notes">
-		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-	</aside>
-</section>
-```
+If you need to brush up on your HTML and CSS, you can review The Beginner's Guide to HTML and CSS and The Advanced Guide to HTML and CSS. To brush up on jQuery, see Try jQuery.
 
 
-## License
+### Tech requirements:
 
-Reveal.js Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se, MIT License
+ - Your laptop (Mac, PC, or Linux are all okay).
+ - A modern web browser - either Chrome or Firefox with Firebug installed.
+ - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
 
-GDI template (C) 2015 by Cara Jo Miller for Girl Develop It, (License??)
+
+### Topics covered:
+
+ - What is an API?
+ - How do client-side APIs work?
+ - HTML and embedded object APIs
+ - Script APIs
+ - Data APIs with JavaScript
+ -  XmlHttpRequest as API
+ - JSONP APIs
+ - Client-side APIs: what are they? How do they work? How are they different from the other types of APIs?
+ - Pros and cons to using APIs for data
