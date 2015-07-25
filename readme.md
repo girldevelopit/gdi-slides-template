@@ -12,10 +12,6 @@ reveal.js comes with a broad range of features including [nested slides](https:/
 - [Examples](https://github.com/hakimel/reveal.js/wiki/Example-Presentations): Presentations created with reveal.js, add your own!
 - [Browser Support](https://github.com/hakimel/reveal.js/wiki/Browser-Support): Explanation of browser support and fallbacks.
 
-## rvl.io
-
-Slides are written using HTML or markdown but there's also an online editor for those of you who prefer a more traditional user interface. Give it a try at [www.rvl.io](http://www.rvl.io).
-
 
 ## Instructions
 
@@ -52,99 +48,6 @@ This is based on [data-markdown](https://gist.github.com/1343518) from [Paul Iri
 ```
 
 
-### Configuration
-
-At the end of your page you need to initialize reveal by running the following code. Note that all config values are optional and will default as specified below.
-
-```javascript
-Reveal.initialize({
-	// Display controls in the bottom right corner
-	controls: true,
-
-	// Display a presentation progress bar
-	progress: true,
-
-	// Push each slide change to the browser history
-	history: false,
-
-	// Enable keyboard shortcuts for navigation
-	keyboard: true,
-
-	// Enable the slide overview mode
-	overview: true,
-
-	// Loop the presentation
-	loop: false,
-
-	// Number of milliseconds between automatically proceeding to the 
-	// next slide, disabled when set to 0, this value can be overwritten
-	// by using a data-autoslide attribute on your slides
-	autoSlide: 0,
-
-	// Enable slide navigation via mouse wheel
-	mouseWheel: true,
-
-	// Apply a 3D roll to links on hover
-	rollingLinks: true,
-
-	// Transition style
-	transition: 'default' // default/cube/page/concave/zoom/linear/none
-});
-```
-
-### Dependencies
-
-Reveal.js doesn't _rely_ on any third party scripts to work but a few optional libraries are included by default. These libraries are loaded as dependencies in the order they appear, for example:
-
-```javascript
-Reveal.initialize({
-	dependencies: [
-		// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
-		{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-		// Interpret Markdown in <section> elements
-		{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-		// Syntax highlight for <code> elements
-		{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-		// Zoom in and out with Alt+click
-		{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-		// Speaker notes
-		{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-	]
-});
-```
-
-You can add your own extensions using the same syntax. The following properties are available for each dependency object:
-- **src**: Path to the script to load
-- **async**: [optional] Flags if the script should load after reveal.js has started, defaults to false
-- **callback**: [optional] Function to execute when the script has loaded
-- **condition**: [optional] Function which must return true for the script to be loaded
-
-
-### API
-
-The Reveal class provides a minimal JavaScript API for controlling navigation and reading state:
-
-```javascript
-// Navigation
-Reveal.slide( indexh, indexv );
-Reveal.left();
-Reveal.right();
-Reveal.up();
-Reveal.down();
-Reveal.prev();
-Reveal.next();
-Reveal.prevFragment();
-Reveal.nextFragment();
-Reveal.toggleOverview();
-
-// Retrieves the previous and current slide elements
-Reveal.getPreviousSlide();
-Reveal.getCurrentSlide();
-
-Reveal.getIndices(); // { h: 0, v: 0 } }
-```
-
 ### States
 
 If you set ``data-state="somestate"`` on a slide ``<section>``, "somestate" will be applied as a class on the document element when that slide is opened. This allows you to apply broad style changes to the page based on the active slide.
@@ -155,26 +58,6 @@ Furthermore you can also listen to these changes in state via JavaScript:
 Reveal.addEventListener( 'somestate', function() {
 	// TODO: Sprinkle magic
 }, false );
-```
-
-### Ready event
-
-The 'ready' event is fired when reveal.js has loaded all (synchronous) dependencies and is ready to start navigating.
-
-```javascript
-Reveal.addEventListener( 'ready', function( event ) {
-	// event.currentSlide, event.indexh, event.indexv
-} );
-```
-
-### Slide change event
-
-An 'slidechanged' event is fired each time the slide is changed (regardless of state). The event object holds the index values of the current slide as well as a reference to the previous and current slide HTML nodes.
-
-```javascript
-Reveal.addEventListener( 'slidechanged', function( event ) {
-	// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-} );
 ```
 
 ### Internal links
@@ -204,20 +87,6 @@ The default fragment style is to start out invisible and fade in. This style can
 	<p class="fragment highlight-blue">highlight-blue</p>
 </section>
 ```
-
-### Fragment events
-
-When a slide fragment is either shown or hidden reveal.js will dispatch an event.
-
-```javascript
-Reveal.addEventListener( 'fragmentshown', function( event ) {
-	// event.fragment = the fragment DOM element
-} );
-Reveal.addEventListener( 'fragmenthidden', function( event ) {
-	// event.fragment = the fragment DOM element
-} );
-```
-
 
 ## PDF Export
 
@@ -250,21 +119,6 @@ By default notes are written using standard HTML, see below, but you can add a `
 </section>
 ```
 
-## Server Side Speaker Nodes
-
-In some cases it can be desirable to run notes on a separate device from the one you're presenting on. The Node.js-based notes plugin lets you do this using the same note definitions as its client side counterpart. Include the requried scripts by adding the following dependencies:
-
-```
-{ src: '/socket.io/socket.io.js', async: true },
-{ src: 'plugin/notes-server/client.js', async: true }
-```
-
-Then:
-
-1. Install [Node.js](http://nodejs.org/)
-2. Run ```npm install```
-3. Run ```node plugin/notes-server```
-
 
 ## Folder Structure
 - **css/** Core styles without which the project does not function
@@ -274,6 +128,5 @@ Then:
 
 ## License
 
-MIT licensed
-
-Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+Reveal.js Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se, MIT License
+GDI template (C) 2015 Girl Develop It, (License??)
