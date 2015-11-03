@@ -14,20 +14,6 @@
  * Copyright (C) 2015 Marcy Sutton, http://marcysutton.com
  */
 
-var loadA11yPluginCSS = (function(){
-	var cssId = 'a11yPluginCSS';
-	if (!document.getElementById(cssId)) {
-	    var head  = document.getElementsByTagName('head')[0];
-	    var link  = document.createElement('link');
-	    link.id   = cssId;
-	    link.rel  = 'stylesheet';
-	    link.type = 'text/css';
-	    link.href = 'plugin/accessibility-helper/css/accessibility-helper.css';
-	    link.media = 'all';
-	    head.appendChild(link);
-	}
-});
-
 var PLUGIN_SLIDES = [];
 
 var SlideAccessibility = (function(){
@@ -35,8 +21,6 @@ var SlideAccessibility = (function(){
 	'use strict';
 
   var SLIDE_SELECTOR = '.slides > section';
-
-	loadA11yPluginCSS();
 
   // get slides, wrap contents in 'accessibilityWrapper'
 	// only wrap sections containing content

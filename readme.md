@@ -2,7 +2,7 @@
 
 # Add Your Course Title Here
 
-Slides and materials are hosted [here](http://example.com/).
+Slides and materials are hosted at [http://example.com/](http://example.com/).
 
 ## Course description
 
