@@ -136,8 +136,7 @@ div.left-align{
 
 .reveal section img.noborder{
 	border-width: 0;
-	box-shadow: none;
-}
+	box-shadow: none;}
 
 /*********************************************
  * NAVIGATION CONTROLS
