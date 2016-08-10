@@ -1,1 +1,64 @@
-<h2>Gulp Gulp Gulp</h2>
+<section>
+    <h2>Build tools</h2>
+    <hr>
+    <hr>
+    <h4>These are the tools that help us automate repetitive tasks:</h4>
+    <ul>
+        <li>Concatenating and minifying scripts
+        </li>
+        <li>Pre-processing css</li>
+        <li>Optimizing images</li>
+        <li>Move minified files into a specific folder</li>
+        <li>Running tests</li>
+        <li>Live reload browser</li>
+        <li>Lint</li>
+    </ul>
+</section>
+
+<section>
+    <div></div>
+    <h2>Build tool options:</h2>
+    <hr>
+    <ul>
+        <li><strong class="red">Gulp</strong></li>
+        <li><strong class="red"> Grunt</strong></li>
+        <li>Broccoli</li>
+        l
+        <li>Brunch</li>
+        <li>Npm scripts</li>
+    </ul>
+    <div>They all achieve similar goals, but for the purposes of this course we'll be using Gulp</div>
+</section>
+
+<section>
+    <div>
+        <h3>Gulp</h3>
+        <small>Unlike Grunt, Gulp uses nodejs streams and favors code over configuration</small>
+        <small>Let's set up our first Gulp task</small>
+        <h4>Installation</h4>
+
+    <pre><code>
+        $ npm install -g gulp
+        # also install locally
+        # --save-dev adds it as a dev dependency to our package.json
+        $ npm install --save-dev gulp
+        $ touch gulpfile.js
+    </code></pre>
+        <p>Open gulpfile.js in your text editor</p>
+        <p>Add the following lines:</p>
+    <pre><code>
+        var gulp = require('gulp');
+
+        gulp.task('default', function(){
+            console.log('Our first gulp task')
+        }
+    </code></pre>
+        <div>In your terminal run:
+    <pre><code>
+        $ gulp
+    </code></pre>
+        </div>
+
+        <h3>Commit!</h3>
+    </div>
+</section>
