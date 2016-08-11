@@ -33,9 +33,32 @@
     <span>Change this line <pre><code>gulp.watch('src/&#42;&#42;/&#42;', browserSync.reload);
 	</code></pre>
     </span>
-    <div>to <pre><code>gulp.watch('src/styles/&#42;&#42;/&#42;.css', ['styles']);</code></pre></div>
+    <div>to
+        <pre><code>gulp.watch('src/styles/&#42;&#42;/&#42;.css', ['styles']);</code></pre>
+    </div>
 </section>
 
 <section>
-  <h2>Sourcemaps</h2>
+    <h2>Sourcemaps</h2>
+    <p>If you try to debug the minified css, it is going to get tricky</p>
+    <p class="left-align">Sourcemaps to the rescue!</p>
+    <p class="left-align">We are going to install another gulp plugin called gulp-sourcemaps</p>
+    <p class="left-align">
+    <pre><code>npm install --save-dev gulp-sourcemaps</code></pre>
+    </p>
+    <p class="left-align">Require it in our gulpfile
+    <pre><code>var  sourcemaps=require('gulp-’sourcemaps') </code></pre>
+    </p>
+    <div>Add it to our styles task
+        <pre>
+            <code>
+    gulp.task('styles', function(){
+       gulp.src(['src/styles/&#42;&#42;/&#42;.css']) //source for gulp to watch
+           .pipe(sourcemaps.init())	//init sourcemaps
+           .pipe(minifyCss()) //stream! Run minify on the src
+           .pipe(sourcemaps.write()) //write sourcemaps
+            </code>
+        </pre>
+    </div>
+ <p3>Commit</p3>
 </section>
