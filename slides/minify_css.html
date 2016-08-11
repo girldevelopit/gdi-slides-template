@@ -1,0 +1,41 @@
+<section>
+    <h2>Using Gulp to minify CSS</h2>
+    <p>Let's write a ccs minification task</p>
+    <p>We are going to install a gulp plugin called gulp-minify-css</p>
+    <div>Install plugin
+        <pre><code>npm install --save-dev gulp-minify-css</code></pre>
+    </div>
+    <div>In our gulpfile.js
+            <pre><code>
+       var minifyCss=require('gulp-minify-css')
+
+        gulp.task('styles', function(){
+            gulp.src(['src/styles/&#42;&#42;/&#42;.css']) //source for gulp to watch
+               .pipe(minifyCss()) // Run minify on the src
+               .pipe(gulp.dest('dist/styles')) //save to dist dir
+               .pipe(browserSync.stream()); //and finally reload
+});
+        </code></pre>
+    </div>
+    <div>Change our index.html to look in the new location
+            <pre><code>
+       &lt;link rel="stylesheet" href="dist/styles/main.css"&gt;
+            </code></pre>
+    </div>
+    <p>Let's make a change to css</p>
+
+</section>
+
+<section>
+    <h2>Womp Womp Womp...</h2>
+    <span> What  happened?</span>
+    <h6>We forgot to add it to our wotch task! Let's do that now.</h6>
+    <span>Change this line <pre><code>gulp.watch('src/&#42;&#42;/&#42;', browserSync.reload);
+	</code></pre>
+    </span>
+    <div>to <pre><code>gulp.watch('src/styles/&#42;&#42;/&#42;.css', ['styles']);</code></pre></div>
+</section>
+
+<section>
+  <h2>Sourcemaps</h2>
+</section>
