@@ -1,0 +1,59 @@
+<section>
+    <h2>Let's also add javascript minification and image optimization</h2>
+    <ul>
+        <li>gulp-uglify</li>
+        <li>gulp-imagemin</li>
+    </ul>
+</section>
+
+<section>
+    <h2>You should be pros at this now</h2>
+    <pre><code>
+        $ npm install --save-dev gulp-uglify
+        $ npm install --save-dev gulp-imagemin
+
+        #All in one
+        $ npm install --save-dev gulp-imagemin gulp-uglify
+
+    </code>
+    </pre>
+</section>
+
+<section>
+    <h2>first, require them in your gulp file</h2>
+    <p>Add 2 tasks to gulpfile.js called 'images' and 'scripts'</p>
+    <pre><code>
+        var uglify =require('gulp-uglify')
+        var imagemin =require('gulp-imangemin’)
+
+        gulp.task('images', function(){
+		gulp.src(['src/img/&#42;&#42;/&#42;]) //source for gulp to watch
+	       .pipe(imagemin())
+		   .pipe(gulp.dest('dist/img)) //save to dist dir
+		   .pipe(browserSync.stream()); //and finally reload
+
+});
+
+    </code></pre>
+</section>
+
+<section>
+
+    <p>..And uglify</p>
+    <pre><code>
+
+       
+gulp.task('scripts’, function(){
+		gulp.src(['src/scripts/&#42;&#42;/&#42;.js]) //source for gulp to watch
+	       .pipe(sourcemaps.init())	//init sourcemaps	
+		   .pipe(uglify()) //stream! Run minify on the src
+		   .pipe(sourcemaps.write())
+		   .pipe(gulp.dest('dist/scripts')) //save to dist dir
+});
+
+    </code></pre>
+    <h5>Finally set your index.html, point to the new location and to watch</h5>
+    <pre><code>
+        gulp.watch('src/img/&#42;&#42;/&#42;, ['images]);
+    </code></pre>
+</section>
