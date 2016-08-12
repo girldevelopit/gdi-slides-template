@@ -4,3 +4,7 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.iml
+.idea/
+modern-web-dev-tools.iml
+

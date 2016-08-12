@@ -1,29 +1,36 @@
-> Please read our slide creation guidelines in [the wiki](https://github.com/girldevelopit/gdi-slides-template/wiki). Then, delete this banner and add the specifics about your class below.
+# Modern Web Development Tools
 
-# Add Your Course Title Here
-
-Slides and materials are hosted at [http://example.com/](http://example.com/).
+Slides and materials are hosted at [Modern web tools](https://imuchnik.github.io/modern-web-dev-tools/#/).
 
 ## Course description
 
 Use this space for a short description of your course. We recommend using the description from your meetup event.
 
 **Cost:** 
+$60
 
 **Dates:** 
+8/21/2016
 
 **Location:** 
+CodeSmith LA
 
-A limited number of scholarships are available for those with a financial hardship. To apply, contact us at...
+A limited number of scholarships are available for those with a financial hardship. To apply, contact us at losangeles@girldevelopit.com
 
 
 ### Prerequisites:
+
+1. CSS
+2. HTML
+3. Javascript
+4. Git/Github
+
 
 List any prerequisites for this class, including any previous classes or the equivalent self-study or real-world skills.
 
 You should have:
 
-(a) taken Intro or Intermediate HTML/CSS through Girl Develop It, or
+(a) taken Intro  HTML/CSS, Git/Github and JS through Girl Develop It, or
 
 (b) built and managed websites on your own,
 
@@ -38,12 +45,18 @@ You should have:
 
  - Your laptop (Mac, PC, or Linux are all okay).
  - A modern web browser - either Chrome or Firefox with Firebug installed.
- - A text editor. We recommend Sublime Text 2 (free; available for Mac, PC, and Linux).
+ - A text editor. We recommend Sublime Text 2 or Atom  (free; available for Mac, PC, and Linux).
 
 
 ### Topics covered:
 
- - The topics you plan to cover
- - Written in list form
- - Here's another one
+ - Command line
+ - Git
+ - Build tools( Gulp, Grunt, Yeoman)
+ - HTML templating
+ - CSS pre-processors
+ - Javascript code organization
+ - Javascript testing
+ 
+ Special thanks to @ascott1 for materials. Adapted from learnfrontend.io
 

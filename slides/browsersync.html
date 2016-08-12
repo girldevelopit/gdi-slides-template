@@ -1,0 +1,37 @@
+<section>
+    <h2>Let's make gulp task do something</h2>
+    <p>Let's start with browsersync</p>
+    <ul>
+        <li>browsersync.io</li>
+        <li>Starts a static web server</li>
+        <li>Automatically reloads the page when a specified file is changed</li>
+        <li>Can sync across browser and devices</li>
+    </ul>
+
+</section>
+
+<section>
+    <h2>Install and configure browsersync</h2>
+    <hr>
+    <hr>
+
+    <pre><code>$ npm install browser-sync --save-dev</code></pre>
+
+    <span></span>
+            <pre><code>
+    #Require it in your gulpfile
+    var browserSync = require('browser-sync').create();
+                    ....
+
+    gulp.task('default',  function() {
+        browserSync.init({
+            server: './'
+        });
+        gulp.watch('src/&#42;&#42;/&#42;', browserSync.reload);
+        gulp.watch('&#42;.html', browserSync.reload);
+ });
+            </code></pre>
+
+    <p>Make some css changes and see our browser instantly updat!e</p>
+
+</section>

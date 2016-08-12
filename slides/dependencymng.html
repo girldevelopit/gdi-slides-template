@@ -1,0 +1,59 @@
+<section>
+    <h3>Using dependency package management</h3>
+    <p>The two most popular ones are Bower and Npm</p>
+    <p>We'll be using NPM for this class. </p>
+
+    <ol>
+        <li>Cd into your project dir</li>
+        <li>Run:
+        <pre><code>
+            $ npm init
+        </code></pre>
+        </li>
+        <li>If you run `ls` command you will notice package.json file.</li>
+        <li>you will also notive node_modules directory</li>
+    </ol>
+    <h3>Let's play around with it. Demo time!</h3>
+    <aside class="notes">
+        <div>Verify that jquery is now present on the page
+            Also see node_modules containing jquery directory
+            Delete node_modules dir and run `npm install”
+            Talk about not checking npm modules in, → create .gitignore file and add node_modules
+            Run git status again.
+        </div>
+    </aside>
+</section>
+
+<section>
+    <h2>Adding jquery via npm</h2>
+    <ul>
+        <li>Now lets install jquery:
+            <pre>
+                <code>npm install jquery --save</code></pre>
+        </li>
+        <li>Open package.json file and note the new dependencies block</li>
+        <li>Add the script to your index.html</li>
+        <li>Let's now see it in the browser</li>
+        <li>And full power of npm - let's delete our node_modules directory</li>
+        <li>From your terminal window run:
+        <pre>
+            <code>
+            $ npm install
+        </code>
+        </pre>
+        </li>
+    </ul>
+
+</section>
+<section>
+    <h3>We are now ready for our first commit!</h3>
+    <h4>...but few housekeeping items first </h4>
+    <hr>
+    <hr>
+    <ul>
+        <li>We actually do not want to check in our node_modules directory</li>
+        <li>We can control the items we want to exlude via .gitgnore file</li>
+        <li>Add node_modules to the .gitignore file in the root. (We'll need to create it, if it is not there yet)</li>
+        <li>Let's try it in practice and commit our work so far</li>
+    </ul>
+</section>
