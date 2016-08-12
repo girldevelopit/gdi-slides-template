@@ -1,0 +1,61 @@
+<section>
+    <h3>Templating Engines</h3>
+    <p>Some examples</p>
+    <ul>
+        <li>Handlebars</li>
+        <li>Underscore</li>
+        <li>Mustache</li>
+        <li>Jade</li>
+        <li>Embedded JS templates</li>
+    </ul>
+</section>
+<section>
+    <h2>Our first template</h2>
+    <ul>
+        <li>Move index.html file into index<span class="red">.hbs</span></li>
+        <li>Install 2 new plugins <span class="red">gulp-compile-handlebars</span> and <span
+                class="red">gulp-rename</span></li>
+        <li>Require those 2 plugins in you gulpfile</li>
+        <li>Create and new gulp task called templates
+        <pre>
+            <code>
+            gulp.task(‘templates’, function(){
+              return gulp.src(['src/templates/**/*.hbs']) //watch our template dir
+                .pipe(handlebars()) //pipe through handlebars
+                .pipe(rename(function(path){ //rename, take a function
+                path.extname=’.html’
+                })
+                .pipe(gulp.dest(‘./’));
+             </code>
+        </pre>
+        </li>
+    </ul>
+</section>
+<section>
+    <span>Fix watch, we wanted to run all these tasks when gulp fires up
+            <pre>
+                <code>
+gulp.task('default', <span class="red">['templates', 'scripts', 'styles', 'images']</span>,
+  function() {
+    browserSync.init({
+      server: './'
+    });
+
+    gulp.watch('src/scripts/&#42;&#42;/&#42;.js', ['scripts']);
+    gulp.watch('src/styles&#42;&#42;/&#42;.css', ['styles']);
+    gulp.watch('src/img/&#42;&#42;/&#42;', ['images']);
+    gulp.watch('src/templates/&#42;&#42;/&#42;.hbs', ['templates']);
+    gulp.watch('*.html', browserSync.reload);
+
+                </code>
+            </pre>
+    </span>
+    <ol>
+        <li>Let's modify our template and see how page updates</li>
+        <li>Commit</li>
+    </ol>
+    <br>
+    <br>
+    <h5 >Extra credit: Do we want to add someting to .gitignore file?</h5>
+
+</section>

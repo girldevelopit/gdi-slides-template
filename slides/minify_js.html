@@ -22,38 +22,54 @@
 <section>
     <h2>first, require them in your gulp file</h2>
     <p>Add 2 tasks to gulpfile.js called 'images' and 'scripts'</p>
-    <pre><code>
+
+     <pre><code>
         var uglify =require('gulp-uglify')
-        var imagemin =require('gulp-imangemin’)
+        var imagemin =require('gulp-imangemin')
 
-        gulp.task('images', function(){
-		gulp.src(['src/img/&#42;&#42;/&#42;]) //source for gulp to watch
-	       .pipe(imagemin())
-		   .pipe(gulp.dest('dist/img)) //save to dist dir
-		   .pipe(browserSync.stream()); //and finally reload
-
-});
-
-    </code></pre>
-</section>
-
-<section>
-
-    <p>..And uglify</p>
-    <pre><code>
-
-       
-gulp.task('scripts’, function(){
-		gulp.src(['src/scripts/&#42;&#42;/&#42;.js]) //source for gulp to watch
-	       .pipe(sourcemaps.init())	//init sourcemaps	
+      gulp.task('scripts', function(){
+		gulp.src(['src/scripts/&#42;&#42;/&#42;.js']) //source for gulp to watch
+	       .pipe(sourcemaps.init())	//init sourcemaps
 		   .pipe(uglify()) //stream! Run minify on the src
 		   .pipe(sourcemaps.write())
 		   .pipe(gulp.dest('dist/scripts')) //save to dist dir
 });
+    </code></pre>
 
+</section>
+<section>
+    <h2>..And images</h2>
+    <p>Should be pretty similar to 'scripts'</p>
+
+     <pre><code>
+       gulp.task('images', function(){
+    		gulp.src(['src/img/&#42;&#42;/&#42;]) //source for gulp to watch
+	       .pipe(imagemin())
+		   .pipe(gulp.dest('dist/img')) //save to dist dir
+		   .pipe(browserSync.stream()); //and finally reload
+
+       });
     </code></pre>
+
     <h5>Finally set your index.html, point to the new location and to watch</h5>
-    <pre><code>
+    <pre>
+        <code>
         gulp.watch('src/img/&#42;&#42;/&#42;, ['images]);
-    </code></pre>
+
+	    gulp.watch('src/scripts/&#42;&#42;/&#42;.js', ['scripts']);
+    </code>
+    </pre>
+
+</section>
+
+<section>
+    <h2>
+        Run gulp to see the results
+    </h2>
+    <p>After we complete the task, it is a good time to stop and do a git commit</p>
+    <p>Do we want to commit /dist directory?</p>
+</section>
+<section>
+    <h1>No, we probably do not</h1>
+    <p>So let's add it to .gitignore</p>
 </section>
