@@ -2,7 +2,7 @@
 
 # Add Your Course Title Here
 
-Slides and materials are hosted at [http://github.io/your_username_here/your_reposotory_name_here](http://github.io/your_username_here/your_reposotory_name_here).
+Slides and materials are hosted at [http://github.io/your_username_here/your_repository_name_here](http://github.io/your_username_here/your_repository_name_here).
 
 ## Course description
 
