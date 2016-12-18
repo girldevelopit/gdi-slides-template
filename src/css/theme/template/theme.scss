@@ -18,7 +18,6 @@ body {
 	font-size: $mainFontSize;
 	font-weight: normal;
 	letter-spacing: -0.02em;
-	color: $mainColor;
 }
 
 ::selection {
@@ -149,9 +148,29 @@ body {
 
 
 /*********************************************
- * PROGRESS BAR
+ * FOOTER
  *********************************************/
+.reveal footer{
+	position: fixed;
+	height: 26px;
+	width: 100%;
+	bottom: 3px;
+	left: 0;
+	z-index: 10;
+	font-size: 45%;
+	text-align: left;
+	background-image: url(../img/wordmark-tagline.png);
+	background-repeat: no-repeat;
+	background-size: auto 74%;
+	background-position: 7px 0;
+}
 
+.reveal footer .copyright{
+	margin: 7px 9px 0 110px;
+}
+.reveal footer .copyright a img{
+	vertical-align: middle;
+}
 .reveal .progress {
 	background: rgba(0,0,0,0.2);
 }
@@ -159,6 +178,8 @@ body {
 		background: $linkColor;
 		        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
+
+
 
 /*********************************************
  * SLIDE NUMBER

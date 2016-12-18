@@ -1,2 +1,322 @@
-body{background:red}
+@font-face {
+  font-family: 'Gotham-Round';
+  src: local("Gotham-Round"), url("../fonts/gothamrnd-light-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: #fff;
+  font-family: "Gotham-Round", sans-serif;
+  line-height: 1.35;
+  font-size: 30px;
+  color: #333; }
+
+.reveal {
+  font-family: "Gotham-Round", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -0.02em; }
+
+::selection {
+  color: #fff;
+  background: #FF5E99;
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #f05b62;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: none; }
+
+.reveal h1 {
+  font-size: 2.33331em; }
+.reveal h2 {
+  font-size: 1.83332em; }
+.reveal h3 {
+  font-size: 1.33332em; }
+.reveal h4 {
+  font-size: 0.99999em; }
+.reveal h5 {
+  font-size: 0.66666em; }
+.reveal h6 {
+  font-size: 0.33333em; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #13DAEC;
+  text-decoration: none;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #71e9f4;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #0d99a5; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #13DAEC;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #f05b62; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #f05b62; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #f05b62; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #f05b62; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #53555C; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #53555C; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #53555C; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #53555C; }
+
+/*********************************************
+ * FOOTER
+ *********************************************/
+.reveal footer {
+  position: fixed;
+  height: 26px;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  z-index: 10;
+  font-size: 45%;
+  text-align: left;
+  background-image: url(../img/wordmark-tagline.png);
+  background-repeat: no-repeat;
+  background-size: auto 74%;
+  background-position: 7px 0; }
+
+.reveal footer .copyright {
+  margin: 7px 9px 0 110px; }
+
+.reveal footer .copyright a img {
+  vertical-align: middle; }
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #13DAEC;
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #13DAEC; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+body {
+  background: white;
+  background: -moz-radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f2f2f2), color-stop(100%, white));
+  background: -webkit-radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
+  background: -o-radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
+  background: -ms-radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
+  background: radial-gradient(center, circle cover, #f2f2f2 0%, white 100%);
+  background-color: white; }
+
+.reveal {
+  color: #333333; }
+
+::selection {
+  color: white;
+  background: rgba(11, 79, 81, 0.99);
+  text-shadow: none; }
+
+div.halfblock {
+  float: left;
+  width: 45%;
+  text-align: left;
+  margin-right: 5%; }
+
+div.left-align {
+  text-align: left; }
+
+.clear {
+  clear: both; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #f05b62;
+  line-height: 0.9em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  text-shadow: #cccccc; }
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+
+.reveal h1 {
+  font-size: 2.5em; }
+
+.reveal h2 {
+  font-size: 1.8em; }
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #01a9b4;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #f9b8bb;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #01a9b4; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  max-height: 500px;
+  max-width: 80%; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #01a9b4;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.reveal section img.noborder {
+  border-width: 0;
+  box-shadow: none; }
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.left,
+.reveal .controls div.left.enabled {
+  border-right-color: #01a9b4; }
+
+.reveal .controls div.right,
+.reveal .controls div.right.enabled {
+  border-left-color: #01a9b4; }
+
+.reveal .controls div.up,
+.reveal .controls div.up.enabled {
+  border-bottom-color: #01a9b4; }
+
+.reveal .controls div.down,
+.reveal .controls div.down.enabled {
+  border-top-color: #01a9b4; }
+
+.reveal .controls div.left.enabled:hover {
+  border-right-color: #f9b8bb; }
+
+.reveal .controls div.right.enabled:hover {
+  border-left-color: #f9b8bb; }
+
+.reveal .controls div.up.enabled:hover {
+  border-bottom-color: #f9b8bb; }
+
+.reveal .controls div.down.enabled:hover {
+  border-top-color: #f9b8bb; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #01a9b4;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+.reveal footer {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  bottom: 3px;
+  left: 0;
+  z-index: 10;
+  font-size: 35%;
+  text-align: right;
+  background-image: url(../images/pink-logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+
+.reveal footer .copyright {
+  margin: 15px 5px 0 100px; }
+
+.reveal footer .copyright a img {
+  vertical-align: middle; }
+
 /*# sourceMappingURL=gdilight.css.map */
