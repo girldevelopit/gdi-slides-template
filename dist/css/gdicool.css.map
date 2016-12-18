@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAK;EACH,UAAU,EAAE,KAAK",
-"sources": ["../../src/css/theme/source/gdicool.scss"],
-"names": [],
-"file": "gdicool.css"
-}
+{"version":3,"sources":["../../src/css/theme/source/gdicool.scss"],"names":[],"mappings":"AAAA,KACE,eAAiB,CAAA","file":"gdicool.css"}

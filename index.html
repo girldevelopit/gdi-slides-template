@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+		<title>GDI Slides Template - The GDI HTML Presentation Framework</title>
 
 		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
 		<meta name="author" content="Girl Develop It">
@@ -293,7 +293,7 @@ end
 					<h2>Themes</h2>
 					<p>
 						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
+						<a href="#" onclick="document.getElementById('theme').setAttribute('href','../dist/css/gdicool.css'); return false;">GDI Cool</a> -
             <a href="?theme=gdilight#/themes">GDI Light</a> -
             <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
             <a href="?theme=gdidefault#/themes">Default</a>
@@ -378,7 +378,7 @@ end
 
 				// Optional reveal.js plugins
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'dist/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
