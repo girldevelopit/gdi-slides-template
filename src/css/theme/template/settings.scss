@@ -21,7 +21,7 @@ $gdiDarkGray: #333;
 
 // Primary/body text
 $mainFont: 'Gotham-Round', sans-serif;
-$mainFontSize: 36px;
+$mainFontSize: 30px;
 $mainColor: #eee;
 
 // Headings
@@ -45,6 +45,10 @@ $selectionColor: #fff;
 
 // Progress Bar
 $lightBlue: #01a9b4;
+
+// Navigation
+$navigationArrowColor: $gdiPink;
+$navigationArrowHover: #53555C;
 
 // Generates the presentation background, can be overridden
 // to return a background image or gradient

@@ -33,7 +33,10 @@ module.exports = function(grunt) {
             main: {
                 files: {
                     'dist/css/reveal.css': 'src/css/theme/reveal.scss',
-                    'dist/css/gdidefault.css': 'src/css/theme/source/gdidefault.scss'
+                    'dist/css/default.css': 'src/css/theme/source/default.scss',
+                    'dist/css/gdicool.css': 'src/css/theme/source/gdicool.scss',
+                    'dist/css/gdilight.css': 'src/css/theme/source/gdilight.scss',
+                    'dist/css/gdisunny.css': 'src/css/theme/source/gdisunny.scss'
                 }
             }
         },
@@ -97,7 +100,7 @@ module.exports = function(grunt) {
 
         watch: {
             main: {
-                files: [ 'Gruntfile.js', 'js/reveal.js', 'src/css/reveal.css' ],
+                files: [ 'Gruntfile.js', 'src/js/reveal.js', 'src/css/theme/reveal.scss' ],
                 tasks: 'default'
             },
             theme: {

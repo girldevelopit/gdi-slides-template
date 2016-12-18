@@ -9,6 +9,7 @@ body {
 	@include bodyBackground();
 	font-family: $mainFont;
 	line-height: 1.35;
+	font-size: $mainFontSize;
 	color: $gdiDarkGray;
 }
 
@@ -44,10 +45,10 @@ body {
 }
 .reveal {
 	h1 {
-		@include heading-size(9);
+		@include heading-size(7);
 	}
 	h2 {
-		@include heading-size(5);
+		@include heading-size(5.5);
 	}
 	h3 {
 		@include heading-size(4);

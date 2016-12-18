@@ -1,14 +1,11 @@
 @import "../template/settings";
 @import "../template/theme.scss";
 
-
-
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 
 .reveal {
-  font-size: 36px;
   font-weight: 300;
   letter-spacing: -0.02em;
   color: #53555C;
@@ -45,10 +42,6 @@ div.left-align{
 .reveal a:not(.image) {
   color: $gdiPink;
   text-decoration: none;
-  -webkit-transition: color .15s ease;
-  -moz-transition: color .15s ease;
-  -ms-transition: color .15s ease;
-  -o-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
@@ -63,7 +56,7 @@ div.left-align{
  * IMAGES
  *********************************************/
 .reveal section img {
-  margin: 15px;
+  margin: 15px 0;
   transition: all .2s linear;
   max-height: 375px;
   max-width: 80%;
@@ -81,33 +74,41 @@ div.left-align{
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.left,
-.reveal .controls div.left.enabled {
-  border-right-color: #01a9b4; }
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: $navigationArrowColor;
+}
 
-.reveal .controls div.right,
-.reveal .controls div.right.enabled {
-  border-left-color: #01a9b4; }
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: $navigationArrowColor;
+}
 
-.reveal .controls div.up,
-.reveal .controls div.up.enabled {
-  border-bottom-color: #01a9b4; }
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: $navigationArrowColor;
+}
 
-.reveal .controls div.down,
-.reveal .controls div.down.enabled {
-  border-top-color: #01a9b4; }
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: $navigationArrowColor;
+}
 
-.reveal .controls div.left.enabled:hover {
-  border-right-color: #f9b8bb; }
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: $navigationArrowHover;
+}
 
-.reveal .controls div.right.enabled:hover {
-  border-left-color: #f9b8bb; }
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: $navigationArrowHover;
+}
 
-.reveal .controls div.up.enabled:hover {
-  border-bottom-color: #f9b8bb; }
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: $navigationArrowHover;
+}
 
-.reveal .controls div.down.enabled:hover {
-  border-top-color: #f9b8bb; }
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: $navigationArrowHover;
+}
 
 /*********************************************
  * PROGRESS BAR
@@ -116,25 +117,26 @@ div.left-align{
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #01a9b4;
+  background: $gdiPink;
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
 .reveal footer{
   position: fixed;
-  height: 40px;
+  height: 26px;
   width: 100%;
   bottom: 3px;
   left: 0;
   z-index: 10;
-  font-size: 35%;
-  text-align:right;
+  font-size: 45%;
+  text-align: left;
   background-image: url(../img/wordmark-tagline.png);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto 74%;
+  background-position: 7px 0;
 }
 
 .reveal footer .copyright{
-  margin:15px 5px 0 100px;
+  margin: 7px 9px 0 110px;
 }
 .reveal footer .copyright a img{
   vertical-align: middle;
