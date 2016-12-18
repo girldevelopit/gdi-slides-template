@@ -33,16 +33,7 @@ module.exports = function(grunt) {
             main: {
                 files: {
                     'dist/css/reveal.css': 'src/css/theme/reveal.scss',
-                    'dist/css/default.css': 'src/css/theme/source/default.scss',
-                    'dist/css/beige.css': 'src/css/theme/source/beige.scss',
-                    'dist/css/night.css': 'src/css/theme/source/night.scss',
-                    'dist/css/serif.css': 'src/css/theme/source/serif.scss',
-                    'dist/css/simple.css': 'src/css/theme/source/simple.scss',
-                    'dist/css/sky.css': 'src/css/theme/source/sky.scss',
-                    'dist/css/moon.css': 'src/css/theme/source/moon.scss',
-                    'dist/css/solarized.css': 'src/css/theme/source/solarized.scss',
-                    'dist/css/blood.css': 'src/css/theme/source/blood.scss',
-                    'dist/css/gdidarkblue.css': 'src/css/theme/source/gdidarkblue.scss'
+                    'dist/css/gdidefault.css': 'src/css/theme/source/gdidefault.scss'
                 }
             }
         },

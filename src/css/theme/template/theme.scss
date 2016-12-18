@@ -1,12 +1,15 @@
-// Base theme template for reveal.js
+@import "settings.scss";
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 
+
 body {
 	@include bodyBackground();
-	background-color: $backgroundColor;
+	font-family: $mainFont;
+	line-height: 1.35;
+	color: $gdiDarkGray;
 }
 
 .reveal {
@@ -35,17 +38,29 @@ body {
 .reveal h6 {
 	margin: $headingMargin;
 	color: $headingColor;
-
-	font-family: $headingFont;
 	line-height: $headingLineHeight;
 	letter-spacing: $headingLetterSpacing;
-
 	text-transform: $headingTextTransform;
-	text-shadow: $headingTextShadow;
 }
-
-.reveal h1 {
-	text-shadow: $heading1TextShadow;
+.reveal {
+	h1 {
+		@include heading-size(9);
+	}
+	h2 {
+		@include heading-size(5);
+	}
+	h3 {
+		@include heading-size(4);
+	}
+	h4 {
+		@include heading-size(3);
+	}
+	h5 {
+		@include heading-size(2);
+	}
+	h6 {
+		@include heading-size(1);
+	}
 }
 
 
@@ -76,23 +91,17 @@ body {
  *********************************************/
 
 .reveal section img {
-	margin: 15px 0px;
+	margin: 15px 0;
 	background: rgba(255,255,255,0.12);
 	border: 4px solid $mainColor;
 
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-
-	-webkit-transition: all .2s linear;
-	   -moz-transition: all .2s linear;
-	    -ms-transition: all .2s linear;
-	     -o-transition: all .2s linear;
 	        transition: all .2s linear;
 }
 
 	.reveal a:hover img {
 		background: rgba(255,255,255,0.2);
 		border-color: $linkColor;
-
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 	}
 
@@ -147,11 +156,6 @@ body {
 }
 	.reveal .progress span {
 		background: $linkColor;
-
-		-webkit-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
-		   -moz-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
-		    -ms-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
-		     -o-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 		        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
 
