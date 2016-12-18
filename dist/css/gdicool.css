@@ -166,8 +166,7 @@ body {
   background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #e9f1da 100%);
   background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #e9f1da 100%);
   background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #e9f1da 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #e9f1da 100%);
-  background-color: #92bb44; }
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #e9f1da 100%); }
 
 .reveal {
   color: #333333; }
