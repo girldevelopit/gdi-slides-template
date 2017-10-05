@@ -1,7 +1,7 @@
 
 # Intro to Swift
 
-Slides and materials are hosted at [http://github.io/jefflinwood/gdi-intro-to-swift](http://github.io/jefflinwood/gdi-intro-to-swift).
+Slides and materials are hosted at [https://github.io/jefflinwood/gdi-intro-to-swift](https://github.io/jefflinwood/gdi-intro-to-swift).
 
 ## Course description
 
