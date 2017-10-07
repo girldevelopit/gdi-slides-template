@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>GDI Slides Template - The GDI HTML Presentation Framework</title>
+		<title>Girl Develop It - Intro to Swift</title>
 
 		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
 		<meta name="author" content="Girl Develop It">
@@ -62,306 +62,465 @@
 				      	</ul>
 				      	</div>
 				</section>
-        			<!-- Opening -->
+				<!-- Opening -->
 				<section>
-					<img src="dist/img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
-					<h1>Intro to Swift</h1>
-					<h2>This class will be fun!</h2>
-					<p>
-						<small>Found at <a href ="https://github.com/girldevelopit/gdi-slides-template">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h3>Welcome to iOS and Swift!</h3	>
+					<p>Jeff Linwood</p>
+					<p>jlinwood@gmail.com</p>
+					<p>@jefflinwood</p>
+					<p>www.jefflinwood.com</p>
+					<p>&nbsp;</p>
+					<p class="green">Major thanks to our Sponsor, GE!</p>
 				</section>
-        <!-- Compatibility-->
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
+					<h2>Agenda</h2>
+<pre>
+Day 1
 
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
-					</p>
+12:00pm - 12:30pm - Introduction to the class, students intro, agenda, set up
+
+12:30pm - 1:00pm - Swift and iOS Programming - What goes into building an iPhone app? (Presentation)
+
+1:00pm - 2:00pm - Intro to Swift the Programming Language using Xcode Playgrounds (Hands on Exercise)
+
+2:00pm - 2:15pm - Break
+
+2:15pm - 2:45pm - iPhone App Development Concepts (Presentation)
+
+2:45pm - 3:45pm - Building your first iOS App (Hands on Exercise)
+
+3:45pm - 4:00pm - Wrap Up/Feedback
+
+Day 2
+
+12:00pm - 12:30pm - Review of Day 1
+
+12:30pm - 1:00pm - iPhone App User Interface Design (Paper Prototyping) (Team Exercise)
+
+1:00pm - 2:00pm - Designing a User Interface with Storyboard (Hands on Exercise)
+
+2:00pm - 2:15pm - Break
+
+2:15pm - 2:45pm - Developing a Camera App for iOS (Presentation)
+
+2:45pm - 3:45pm - Building a Camera App (Hands on Exercise)
+
+3:45pm - 4:00pm - Wrap Up/Next Steps						
+</pre>
+					
 				</section>
-
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
+					<h2>Short Intro from Jeff</h2>
+					<p>Enjoy teaching Intro to iOS Development at UT-Austin</p>
+					<p>Teach corporate training sessions</p>
+					<p>Mobile app developer for 6 years, enterprise Java developer before that for 10 years</p>
 				</section>
-
-				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h2>Student Intros</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li>Your name</li>
+						<li>If you've done any iOS programming before</li>
+						<li>Why you took this class</li>
+						<lI>What you hope to learn</lI>
+					</ul>
+				</section>
+				<section>
+					<h2>Set up</h2>
+					<p>Does everyone have Xcode downloaded on their Mac?</p>
+					<p>If not, get it from the App Store</p>
+				</section>
+				<section>
+					<h2>Learning Resources</h2>
+					<p>Highly recommend the free <a href="https://itunes.apple.com/us/book/app-development-with-swift/id1219117996?mt=11">App Development with Swift</a> ebook from Apple's iBooks Store</p>
+					<p>Swift Playgrounds app on newer iPads</p>
+					<p><a href="http://www.raywenderlich.com/">www.RayWenderlich.com</a></p>
+					<p><a href="https://www.apple.com/swift/">https://www.apple.com/swift/</a></p>
+				</section>
+        		<!-- What goes into an iPhone app?-->
+				<section>
+					<h2>Elements of a Mobile App</h2>
+					<p>
+						What goes into building a mobile app? Lots of different choices when you create an app for iOS or Android.
+						Most of the time, there will be wireframes or mockups, a detailed visual design, a 
+						mobile app component for each platform, and a server component. An iOS app is usually written in Swift or Objective-C,
+						and an Android app uses Java or Kotlin. There are also cross-platform options like PhoneGap and React Native.
+					</p>
+				</section>
+				<section>
+					<h2>Servers for Mobile Apps</h2>
+					<p>
+						You can use existing services such as Google's Firebase. Another option is Parse, which Buddy hosts, or you can run your
+						own Parse Server. You could also build your mobile app to work with a server you write in a language like Python, Ruby, or
+						Javascript with Node.js. 
+					</p>
+				</section>
+				<section>
+					<h2>Development for iOS</h2>
+					<p>
+						When you write code for iOS, you can use one of two languages - Swift or Objective-C. Swift is the newer 
+						progamming language we will use in this class. Objective-C is older, so you may find examples of it when you search
+						on Google for solutions, or if you are working with an older project.
+					</p>
+				</section>
+				<section>
+					<h2>Visual Layout tools with Storyboard</h2>
+					<p>
+						Xcode lets you design your application screens in Storyboard, which is a visual editor. To make your
+						screens work on all sizes of iPhones and iPads, you can use Auto Layout tools. These are more complicated
+						than using CSS rules with HTML.
+					</p>
+				</section>
+
+				<!-- Intro to Swift with Playgrounds -->
+				<section>
+					<h1>Intro to Swift!</h1>
+				</section>
+				<section>
+					<h2>Xcode Playground</h2>
+					<p>File->New Playground...</p>
+					<p>Make sure iOS is selected</p>
+					<p></p>
+				</section>
+				<section>
+					<h2>Your first Swift Code!</h2>
+<pre><code contenteditable class ="swift">let name = "Jeff"
+	
+let greeting = "Hello, \(name)"
+	
+print(greeting)
+</code></pre>
+				</section>
+				<section>
+					<h2>What's going on?</h2>
+					<ul>
+						<li>When we write code, we have a level of abstraction</li>
+						<li>We have variables and constants that can hold values</li>
+						<li>Those have names which the computer understands, but won't be shown to the user</li>
+						<li>Variables vs Constants</li>
+					</ul>
+				</section>
+				<section>
+					<h2>More underneath the hood</h2>
+					<ul>
+						<li>"Jeff" is a String - that's 0 or more characters</li>
+						<li>Strings are data types</li>
+						<li>Some other data types are boolean - true/false, integer - whole numbers, and doubles - decimal numbers</li>
+						<li>Can "fill in the blanks" with strings using String interpolation - like Madlibs!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Playground</h2>
+					<img src="img/XcodePlayground.png">
+				</section>
+				<section>
+					<h2>Learning Swift</h2>
+					<ul>
+						<li>Lesson 1.2, 1.3, 1.4 in "App Development with Swift"</li>
+						<li>Variables and Constants</li>
+						<li>Type Inference</li>
+						<li>Math</li>
+						<li>If Else</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Variables</h2>
+					<ul>
+						<li>Single <b>=</b> sign to <i>assign</i> a variable</li>
+						<li>var city = "Austin"</li>
+						<li>var age = 21</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Constants</h2>
+					<ul>
+						<li>let state = "Texas"</li>
+						<li>Can't change the value of a constant</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Types and Type Safety</h2>
+					<ul>
+						<li>String</li>
+						<li>Int</li>
+						<li>Double</li>
+						<li>Boolean</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Type Inference</h2>
+					<ul>
+						<li>If a type isn't declared, then Swift can figure it out <i>(infer)</i> the data type from the value assigned to it
+						</li>
+						<li>"Jeff"</li>
+						<li>13.1</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Math</h2>
+					<ul>
+						<li>Standard arithmetic - +, -, *, /</li>
+						<li>Modulo operator - %</li>
+					</ul>
+				</section>
+				<section>
+					<h2>If Else</h2>
+<pre><code contenteditable class ="swift">if age >= 18 {
+  isAdult = true
+} else {
+  isAdult = false
+}
+print(isAdult)
+</code></pre>
+				<ul>
+					<li>Operators (==,!=, &gt;,&lt;,&amp;&amp;,||)</li>
+				</ul>
+				</section>
+				<section>
+					<h2>Functions</h2>
+<pre><code contenteditable class ="swift">func isAdult(age:Int) -> Bool {
+  if age >= 18 {
+	return true
+  } else {
+	return false
+  }
+}</code></pre>
+					<ul>
+						<li>name, arguments, data type, return value</li>
+					</ul>
+				</section>
+				<!-- iOS App Development Concepts -->
+				<section>
+					<h1>iOS App Development Concepts</h1>
+				</section>
+				<section>
+					<h2>Starting a new project</h2>
+				</section>
+				<section>
+					<h2>Guided Tour of Xcode</h2>
+				</section>
+				<section>
+					<h2>View Controllers</h2>
+					<ul>
+						<li>Swift Classes</li>
+						<li>Represent Screens in your app</li>
+						<li>viewDidLoad()</li>
+						<li>View Controller Lifecycle</li>
+					</ul>
+				</section>
+				<section>
+					<h2>User Interface Components</h2>
+					<ul>
+						<li>UIView</li>
+						<li>Labels</li>
+						<li>Buttons</li>
+						<li>Text Fields</li>
+						<li>Switches</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Outlets and Actions</h2>
+					<ul>
+						<li>Outlets - Nouns</li>
+						<li>Actions - Verbs</li>
+						<li>Demonstration</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Properties</h2>
+					<ul>
+						<li>Properties</li>
+						<li>Xcode Autocomplete</li>
+						<li>Demonstration</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Colors</h2>
+					<ul>
+						<li>UIColor.red</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Auto Layout</h2>
+					<ul>
+						<li>Constraints</li>
+						<li>Margins</li>
+						<li>Common problems</li>						
+					</ul>
+				</section>
+				<!-- Building your first iOS App -->
+				<section>
+					<h1>Walk through together</h1>
+				</section>
+
+				<!-- Wrap Up -->
+				<section>
+						<h1>Wrap Up of Day 1/Questions</h1>
+				</section>
+
+				<!-- Review of Day 1 -->
+				<section>
+						<h1>Review of Day 1</h1>
+				</section>
+				<section>
+						<h2>Swift</h2>
+						<ul>
+							<li>Variables - var</li>
+							<li>Constants - let</li>
+							<li>Functions</li>
+							<li>Classes</li>
+							<li>Playgrounds</li>
+						</ul>
+				</section>
+				<section>
+						<h2>iOS Development</h2>
+						<ul>
+							<li>View Controllers</li>
+							<li>Storyboard</li>
+							<li>Outlets</li>
+							<li>Actions</li>
+						</ul>
+				</section>
+				<section>
+						<h2>User Interface Controls</h2>
+						<ul>
+							<li>Labels</li>
+							<li>Buttons</li>
+							<li>Switches</li>
+							<li>Image Views</li>
+						</ul>
+				</section>
+
+				<!-- iPhone App User Interface Design (Paper Prototyping) -->
+				<section>
+					<h1>User Interface Design</h1>
+				</section>
+
+				<section>
+					<h2>App Ideas and Brainstorming</h2>
+					<ul>
+						<li>Try and come up with ideas that solve problems Austin has</li>
+						<li>Get Creative!</li>
+						<li>Come up with a list of 3 or 4 app ideas</li>
+						<li>Share them with your neighbors</li>
+						<li>Augmented Reality, Virtual Reality, Fitness, Video</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Prototyping Methods</h2>
+					<ul>
+						<li>Paper Prototyping</li>
+						<li>Low Fidelity Mockups</li>
+						<li>High Fidelity Mockups</li>
+						<li>iOS Storyboards</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-                <section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-					<p>P.S. This won't work when running the slides locally unless you run reveal.js from a local web server (<a href="https://github.com/girldevelopit/gdi-slides-template/wiki#compiling-slides-and-running-locally" target="_blank">learn how</a>).</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<!-- Examples of code slides-->
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code pre, then code class "xml".</p>
-<pre><code class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+					<h2>Paper Prototyping</h2>
+					<ul>
+						<li>Many different ways to make a mobile application design</li>
+						<li>Pencil and Paper works really well</li>
+						<li>You can just draw out the screens</li>
+						<li>Don't have to be limited by your tools</li>
+					</ul>
 				</section>
 
 				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-<pre><code contenteditable class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
-
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-<pre><code contenteditable class ="css">body{
-  background-color: #ffffff;
-}
-</code></pre>
+					<h2>Sketch out your own idea!</h2>
+					<ul>
+						<li>Take one of the app ideas you brainstormed earlier, and try and sketch out the key screens in the app.</li>
+					</ul>
 				</section>
 
 				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-<pre><code contenteditable class ="javascript">function helloWorld(){
-  var name = 'GDI';
-  alert("Hi, " + name)
-}
-</code></pre>
+					<h2>Small Team Exercise</h2>
+					<ul>
+						<li>Teams of about 3</li>
+						<li>Take one of your ideas and expand it some more
+							</li>
+						<li>Try and get every screen you can think of
+							</li>
+						<li>Draw arrows between buttons or list items that go from one screen to the next
+							</li>
+						<li>Take 10-15 minutes to do this</li>
+					</ul>
+				</section>
+	
+				<!-- Desiging a User Interface with Storyboard -->
+				<section>
+					<h2>Designing a User Interface with Storyboard</h2>
+					<ul>
+						<li>Let's pick one of the app design concepts</li>
+						<li>We will walk through building it out in Storyboard together</li>
+						<li>If we have time, we'll do another one</li>
+					</ul>
+				</section>
+
+				<!-- Developing a Camera App for iOS -->
+				<section>
+					<h1>Developing a Camera App for iOS</h1>
 				</section>
 
 				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-<pre><code contenteditable class ="php">function helloWorld(){
-  $name = 'GDI';
-  echo "Hi, " . $name;
-}
-</code></pre>
+					<h2>Starting a New Project</h2>
+					<ul>
+						<li>Start a new project with Xcode</li>
+						<li>Choose Single View Application</li>
+						<li>Make sure it has Swift as the language</li>
+						<li>Name it PhotoApp</li>
+					</ul>
 				</section>
 
 				<section>
-					  <h2>But wait! We teach code</h2>
-<p>Ruby</p><pre><code contenteditable class ="ruby">def hello_world
-  @name = 'GDI'
-  puts "Hi, #{@name}"
-end
-</code></pre>
-				</section>
-
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
-<pre><code contenteditable class ="python">def hello_world():
-  name = "GDI"
-  print 'Hi, ' + name
-  return
-</code></pre>
- 				</section>
-
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
-<pre><code contenteditable class ="java">public void helloWorld(){
-  String name = "GDI";
-  System.out.println("Hi," + name)
-}
-</code></pre>
- 				</section>
-
-
-        <!-- Elements entering one at a time-->
-        <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
-						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<h2>Using the Camera</h2>
+					<ul>
+						<li>You can use the camera to take a photo</li>
+						<li>Your app can do anything it wants with the photo</li>
+						<li>You can save it to the camera roll</li>
+						<li>You can also load images from the camera roll</li>
+					</ul>
 				</section>
 
 				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
+					<h2>UIImagePickerController</h2>
+					<ul>
+						<li>Apple provides the UIImagePickerController to work with images</li>
+						<li>You need to call it from another view controller</li>
+						<li>Need to implement two delegates on that view controller</li>
+					</ul>
+				</section>			
+				
+				<section>
+					<h2>Privacy Issues</h2>
+					<ul>
+						<li>Apple restricts application access to certain functionality without the user's permission</li>
+						<li>Location, Microphone, Push Notifications</li>
+						<li>Camera and Photo Library also fall in this list</li>
+						<li>Add privacy usage descriptions to the Info.plist file</li>
+					</ul>
+				</section>	
+
+				<section>
+					<h2>After taking the Picture</h2>
+					<ul>
+						<li>Need to implement UIImagePickerControllerDelegate methods</li>
+					</ul>
 				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdicool.css'); return false;">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdilight.css'); return false;">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/gdisunny.css'); return false;">GDI Sunny</a> -
-            <a href="?theme=default#/themes" onclick="document.getElementById('theme').setAttribute('href','dist/css/default.css'); return false;">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+				<!-- Building a Camera App -->
+				<section>
+					<h1>Building a Camera App</h1>
 				</section>
 
 				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
+					<h2></h2>
 				</section>
 
 				<section>
 					<h1>THE END</h1>
-					<h3>Thank you to Girl Develop It</h3>
+					<h3>Thank you to Girl Develop It Austin</h3>
 					<h4>Follow Up: Jeff Linwood / www.jefflinwood.com</h4>
 				</section>
 
