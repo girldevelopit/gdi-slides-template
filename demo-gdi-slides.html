@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<title>GDI Demo Slides Template</title>
+		
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+	<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="css/gdi-theme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+		<!-- Start of Slides container -->
+    <!-- Any section element in this container is displayed as a single slide -->
+    <!-- Comment out rather than delete slide instructions -->
+
+			<div class="slides">
+
+				<!-- GDI Logo -->
+				<section>
+					<img src="assets/imgs/gdi-logos/GDI-Circle-Logo_Peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
+					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
+				</section>
+
+				<!-- Slide Title -->
+				<section>
+					<h3>Demo:</h3>
+          <h3>GDI's HTML Presentation Slides</h3>  
+					<h4>Based on <a href="https://revealjs.com/" target=_blank>Reveal.js</a></h4>
+					</h3>
+				</section>
+
+        <!-- Intro -->
+        <section>
+					<h2>Intro</h2>
+          <ul>
+            <li>Reveal.js is a framework for easily creating beautiful, animated HTML slide presentations.</li>
+            <li>The following slides illustrate how to present GDI content with reveal.js.</li>
+            <li>Copy code snippets from this demo file as needed to create GDI HTML slides.</li>
+          </ul>
+				</section>
+				
+				<!-- Headings -->
+				<section>
+					<h1>Heading h1</h1>
+					<h2>Heading h2</h2>
+					<h3>Heading h3</h3>
+					<h4>Heading h4</h4>
+				</section>
+
+				<!-- Nested Content -->
+				<section id="fragments">
+          <h2>Nested Content</h2>
+          <h3 class="fragment">Content</h3>
+          <h3 class="fragment">More content...</h3>
+          <h3 class="fragment">Even more content...</h3>
+          <h3 class="fragment">Content yet again...</h3>
+          <h3 class="fragment">And we're done.</h3>
+				</section>
+
+				<!-- Fragments -->
+				<section>
+					<h2>Fragments</h2>
+					<div class="fragment">
+						<p>Reveal contents in...</p>
+					</div>
+					<div class="fragment">
+						<p>fragments:</p>
+					</div>
+					<span class="fragment">One</span>
+					<span class="fragment">at</span>
+					<span class="fragment">a</span>
+					<span class="fragment">time.</span>
+				</section>
+
+				<!-- Left align -->
+				<section>
+					<h2 class="left-align">Want to Lean Left?</h2>
+					<p class="left-align">Enough centered text!</p>
+				</section>
+
+				<!-- Unordered List -->
+				<section>
+					<h2>Marvelous Unordered List</h2>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<!-- Ordered List -->
+				<section>
+					<h2>Fantastic Ordered List</h2>
+					<ol>
+						<li>One is smaller than...</li>
+						<li>Two is smaller than...</li>
+						<li>Three!</li>
+					</ol>
+				</section>
+
+        <!-- Basic Image -->
+				<section>
+					<h2>Images</h2>
+					<img src="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg" width="500px" alt="">
+					<p>Remember to give credit.</p>
+					<p>
+            <small>Photo credit: 
+              <a href="https://unsplash.com/@dtopkin1" target="_blank">Dayne Topkin</a>
+              <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+            </small>
+				</p>
+				</section>
+
+				<!-- Image and Text -->
+				<section>
+					<h2>Image and Text</h2>
+          <div class="flex-container">
+            <div class="flex-item">
+              <img src="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg" alt="">
+            </div>
+            <div class="flex-item">
+              <p class="left-align">Some content to the left...</p>
+              <p class="left-align">Or to reverse order, just switch the code snippets.</p>
+            </div>
+          </div>
+				</section>
+				
+				<!-- Background Image -->
+				<section data-background="assets/imgs/stock-img/celebration_dayne-topkin-unsplash.jpg">
+					<h2 style="color: #fff; font-weight: 600;">Add a background Image</h2>
+				</section>
+
+        <!-- Colored Background -->
+				<section data-background-color="#F0E182">
+					<h2 style="color: #1A1735; font-weight: 600;">Change Background Colors</h2>
+          <h4 style="color: #1A1735; font-weight: 600;">Use <a href="https://brandfolder.com/gdi" target="_blank">GDI Brand Colors</a>.</h4>
+				</section>
+
+        <!-- Animated Images or GIFs -->
+        <section>
+          <h2>Animated Images/GIFs</h2>
+          <img src="https://media.giphy.com/media/3ohzdOVasfbk9eY8es/giphy.gif" alt="">
+        </section>
+        
+        <!-- Embed Video -->
+        <section>
+          <h2>Embed Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/-v6F7qBMC7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h3>The next slide shows adding video as a background.</h3>
+        </section>
+
+        <!-- Video Background -->
+        <section data-background-video="https://static.slid.es/site/homepage/v1/homepage-video-editor.mp4" 
+        data-background-video-loop data-background-video-muted>
+        </section>
+
+        <!-- Tables -->
+				<section>
+					<h2>Tables</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Data type</th>
+								<th>Example values</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Integers</td>
+								<td><code>2</code> <code>44</code> <code>-3</code></td>
+							</tr>
+							<tr>
+								<td>Floats</td>
+								<td><code>3.14</code> <code>4.5</code> <code>-2.0</code></td>
+							</tr>
+							<tr>
+								<td>Booleans</td>
+								<td><code>True</code> <code>False</code></td>
+							</tr>
+							<tr>
+								<td>Strings</td>
+								<td><code>'¡hola!'</code> <code>'its python time!'</code></td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+        <!-- Slides with Code: Python  -->
+        <section>
+          <h3>Slides with Code: Python</h3>
+					<pre>
+						<code data-trim data-noescape class="python">
+def add_numbers_between(start, end):
+  sum = 0
+  for n in range(start, end):
+	  sum += n
+	return n
+
+add_numbers_between(5, 10)
+						</code>
+					</pre>
+					<p style="font-size:0.65em">Tip: Click the document icon in the upper right of the code box to copy the code.</p>
+        </section>
+
+				<!-- Slides with Code: HTML -->
+				<section>
+          <h3>Slides with Code: HTML</h3>
+          <pre>
+            <code class="html">
+<p>Hello World.</p>
+            </code>
+          </pre>
+				</section>
+
+				<!-- Slides with Code: CSS -->
+				<section>
+					<h3>Slides with Code: CSS</h3>
+					<pre>
+						<code class="css">
+body {
+  background-color: #ffffff;
+}
+						</code>
+					</pre>
+				</section>
+
+				<!-- Slides with Code: JavaScript -->
+        <section>
+          <h3>Slides with Code: JavaScript</h3>
+          <pre>
+            <code data-trim data-noescape class="javascript">
+function helloWorld(){
+  let name = 'GDI';
+  alert("Hi, " + name)
+}
+            </code>
+          </pre>
+        </section>
+
+				<!-- Editing Slides -->
+        <section>
+          <h3>Editable Slides with Code</h3>
+					<p>Try editing the code!</p>
+          <pre>
+            <code contenteditable class="javascript">
+function helloWorld(){
+  let name = 'GDI';
+  alert("Hi, " + name);
+} 
+            </code>
+          </pre>
+        </section>
+      
+				<!-- Conclusion -->
+				<section>
+					<h4>These are the common and recommended use cases of reveal.js features for GDI slide content.</h4>
+					<h4>Interested in learning more about reveal.js? Visit the framework's <a href="https://revealjs.com/" target=_blank>website</a> for a full demo.</h4>
+				</section>
+				
+      </div> <!-- End of Slides container -->
+	
+  		<footer>
+        <!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Add Class Name</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+
+		</div> <!-- End of Reveal wrapper -->
+
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/plugin.min.js" integrity="sha512-zB6lDbC8bQBXzW9MkgdFtS5wRr+AhAJ1XXJz8Xolr+VVmB7fbHIUd6/iboY+RozDWXfbqw1b4hYzoBhhTXwZFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+        slideNumber: 'c/t',
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+			// add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>
