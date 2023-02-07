@@ -15,7 +15,7 @@ Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML p
   - Rename the file to `index.html`
   - Update course name in the `<title>` tag.
   - Update course name in the `<footer>` tag.
-  - Create [course slides](#slide-markup) (Instructions included in template file.)
+  - Create course slides. (Instructions included in template file. See also [Slide Markup](#slide-markup) below.)
 
 - For a cohort or multi-class series:
    - Clone `template_cohort-index.html`
