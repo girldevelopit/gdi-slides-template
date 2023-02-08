@@ -4,6 +4,7 @@
 
 Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
 
+
 ## Usage Instructions
 
 - Clone or duplicate the contents of this repo. 
@@ -28,9 +29,18 @@ Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML p
 
 - Need/Want to use custom CSS? Add the code to the `style.css` file.
 
+**Recommended:** Preserve the `demo-gdi-slides.html` and `template_` files. Use them as reference/style guide.
+
+
+## Course Creation Tips
+- We recommend using unstacked slides (rather than nested slides) for better readability.
+
+- Limit the amount of content added to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
+
+- Prefer visual explanations to text where possible.
+
 - Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
 
-**Recommended:** Preserve the `demo-gdi-slides.html` and `template_` files. Use them as reference/style guide.
 
 ### Slide Markup
 Markup heirarchy needs to be ``<div class="reveal"> <div class="slides"> <section>`` where the ``<section>`` represents one slide and can be repeated indefinitely. 
