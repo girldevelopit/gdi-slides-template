@@ -1,56 +1,47 @@
-# GDI HTML Slides Template
+## Intro
 
-**Girl Develop It** uses a customized HTML slide template for its open-source course content.
+#### This is a template repo for GDI track repos.
 
-Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
+To prevent _**'repo sprawl'**_ (creating repos for individual courses), GDI has track- or subject-matter-specific repos that contain individual courses:
 
+- [HTML & CSS](https://github.com/girldevelopit/gdi-html-css)
+- [JavaScript](https://github.com/girldevelopit/gdi-javascript)
+- [Python](https://github.com/girldevelopit/gdi-python)
+- [User Experience](https://github.com/girldevelopit/gdi-ux)
+- [Data Science](https://github.com/girldevelopit/gdi-data-science)
 
-## Usage Instructions
+#### :exclamation: Use this template repo to create a new track or subject-matter repository, NOT a new course.
 
-- Clone or duplicate the contents of this repo. 
+- To start a new course, go to your specific track repo and use the `_course-template` folder in that repo.
 
-- Review `demo-gdi-slides.html` for common and recommended ways we use Reveal.js features.
-  - Copy or model the demo slides and code snippets as needed.
+## Content
 
-- To build content for a single course you only need to clone  the `template_index.html` file and make edits: 
-  - Rename the file to `index.html`
-  - Update course name in the `<title>` tag.
-  - Update course name in the `<footer>` tag.
-  - Create course slides. (Instructions included in template file. See also [Slide Markup](#slide-markup) below.)
+This template repo contains a `_course-template` folder and a `shared-assets` folder
 
-- For a cohort or multi-class series:
-   - Clone `template_cohort-index.html`
-   - Rename to `index.html`; it serves as a cover page that links to all classes in the series
-   - Clone `template_index.html` to create subsequent class files: `class1.html`, `class2.html`, etc.
+The `_course-template` folder is the template for creating ==**individual courses**== that go into the main track or subject-matter repository.
 
-- If incorporating images, add them to the `assets/imgs` folder.
-  - Include credit /attribution to image(s) when possible.
-  - Optimize images to reduce file size. Try tinypng.com.
+- The course template folder includes a [README](/_course-template/README.md) with instructions for creating courses
 
-- Need/Want to use custom CSS? Add the code to the `style.css` file.
+The `shared-assets` folder holds custom GDI `css`, `images`, `js` files that ALL course folders reference.
 
-**Recommended:** Preserve the `demo-gdi-slides.html` and `template_` files. Use them as reference/style guide.
+- :exclamation: Do not add course-specific assets or content to the shared-assets folder.
 
+## Usage
 
-## Course Creation Tips
-- We recommend using unstacked slides (rather than nested slides) for better readability.
+To create a new track or subject-matter repo:
 
-- Limit the amount of content added to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
+- Start and name a new repo in [GDI's main or organizational github account](https://github.com/orgs/girldevelopit/repositories)
+  <br>
 
-- Prefer visual explanations to text where possible.
+- Duplicate the contents of this template repo and add them to the new repo
+  <br>
 
-- Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
+- Delete the contents of this README, and update with a description about the new repo
+  <br>
 
+- Use the `_course-template` folder to create or start new courses
 
-### Slide Markup
-Markup heirarchy needs to be ``<div class="reveal"> <div class="slides"> <section>`` where the ``<section>`` represents one slide and can be repeated indefinitely. 
+  - A track repo can contain more than one course
+    <br>
 
-```html
-<div class="reveal">
-	<div class="slides">
-		<section>Slide 1</section>
-		<section>Slide 2</section>
-		<section>Slide 3</section>
-	</div>
-</div>
-```
+- Make sure to also include the `shared-assets` folder in the new repo
